@@ -19,7 +19,7 @@ node {
         stage 'Deploy'
             sh 'cd djtrump'
             sh 'git pull origin master'
-            sh 'source ../enviroments/pyenv/bin/activate'
+            sh 'source /home/camud/enviroments/pyenv/bin/activate'
             sh 'pip install -r requirements.txt'
             sh './manage.py migrate'
 
